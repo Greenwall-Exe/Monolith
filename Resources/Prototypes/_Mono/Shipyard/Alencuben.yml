@@ -1,0 +1,44 @@
+# Author Info
+# GitHub: Greemwall-Exe
+# Discord: Greenwall or zacausa
+
+# Shuttle Notes: Its a itty bitty shuttle designed mostly to fit in a 4x4 space. Its unarmed, most of its mass is glass and thrusters and it doesnt have a real atmos in it but it has a tiny fan in case someone wants to give themselves one
+
+- type: vessel
+  id: Alencuben
+  parent: BaseVessel
+  name: Z-22 Alencuben
+  description: From the folk who brought you the acclaimed Baeg, the Alencuben is a jack of all trades, sporting bay for just about all your needs. Cargo, Science, Medical, Manufacturing, Chemical and powered by a three core AME. Its a beast of a craft meant to be crewed by at least three.
+  price: 150000
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/Alencuben.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  - Salvage
+  - Science
+  - Medical
+  - Cargo
+  engine:
+  - AME
+
+- type: gameMap
+  id: Alencuben
+  mapName: 'Z-22 Alencuben'
+  mapPath: /Maps/_Mono/Shuttles/Alencuben.yml
+  minPlayers: 0
+  stations:
+    Alencuben:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Alencuben CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
