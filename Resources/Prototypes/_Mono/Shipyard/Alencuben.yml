@@ -9,8 +9,8 @@
   parent: BaseVessel
   name: Z-22 Alencuben
   description: From the folk who brought you the acclaimed Baeg, the Alencuben is a jack of all trades, sporting bay for just about all your needs. Cargo, Science, Medical, Manufacturing, Chemical and powered by a three core AME. Its a beast of a craft meant to be crewed by at least three.
-  price: 150000
-  category: Medium
+  price: 250000
+  category: Large
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/Alencuben.yml
   guidebookPage: Null
